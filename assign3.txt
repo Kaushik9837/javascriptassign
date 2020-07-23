@@ -1,0 +1,10 @@
+var password = "Kaushik@1234"
+undefined
+password.match ("^([a-zA-z]{2,7})@([0-4])$")
+null
+password.match ("^([a-zA-z]{2,7})@([a-zA-Z0-4]{1,5})$")
+(3) ["Kaushik@1234", "Kaushik", "1234", index: 0, input: "Kaushik@1234", groups: undefined]
+password.match ("^([a-zA-z]{2,7})@([0-9]{10})$")
+null
+password.match ("^([a-zA-z]{2,7})@([0-9]{1,5})$")
+(3) ["Kaushik@1234", "Kaushik", "1234", index: 0, input: "Kaushik@1234", groups: undefined]
