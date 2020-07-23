@@ -1,0 +1,110 @@
+  SLICE
+*It is START,END?
+ var city= "london"
+ undefined
+ city.slice(1)
+ "ondon"
+ city.slice(2)
+ "ndon"
+* In this case if the positive value is given the letters from the begining direction are removed depending upon the given values.
+
+ var city= "london"
+ undefined
+ city.slice(-1)
+ "londo"
+ var city= "london"
+ undefined
+ city.slice(-2)
+ "lond"
+* In this case if the negative value is given the letters from the end direction are removed depending upon the given values.
+
+ var city= "london"
+undefined
+city.slice(1,3)
+"on"
+city.slice(2,4)
+"nd" 
+* In this case the values given is positive and are given in a particular range,here the values are displayed from the begining side between the given range.
+  The values start from 0 from begining side.
+
+var city= "london"
+undefined
+city.slice(-1,-2)
+""
+city.slice(-4,-3)
+"n"
+city.slice(-3,-2)
+"d"
+* In this case the values given are negative and the values are displayed from the end side in between the given range.
+  The value start from 0 from end side.
+* For negative value the should start from higher number then only the output is displayed
+
+var city= "london"
+undefined
+city.slice(1,-2)
+"ond"
+city.slice(2,-2)
+"nd"
+city.slice(-2,1)
+""
+city.slice(-3,2)
+""
+* In this case if one positive value and one negative value is given the letters from both the sides are removed in between the given range.
+* If the first value is negative and second value is positive then the output will not be displayed.
+
+ SUBSTRING
+*It is START,END?
+
+var city="london"
+undefined
+city.substring(1)
+"ondon"
+city.substring(2)
+"ndon"
+city.substring(-1)
+"london"
+city.substring(-2)
+"london"
+city.substring(2,3)
+"n"
+city.substring(3,4)
+"d"
+city.substring(3,4)
+"d"
+city.substring(-1,2)
+"lo"
+city.substring(-2,3)
+"lon"
+city.substring(2,-3)
+"lo
+
+* If the value is negative the output will not display.
+* It will work only in one direction.
+* It will show only the positive values and in range also the positive values are displayed.
+
+ SUBSTR
+*It is STRAT,LENGTH?
+
+var city="london"
+undefined
+city.substr(1)
+"ondon"
+city.substr(3)
+"don"
+city.substr(1,3)
+"ond"
+city.substr(-1)
+"n"
+city.substr(-3)
+"don"
+city.substr(-1,-3)
+""
+city.substr(-4,-2)
+""
+city.substr(4,-2)
+""
+
+* It works only for one negative value but not more than one negative value.
+* It works on the lenght of the value.
+* It gives one single negative value.
+* It gives only negative value in range also if there is one negative value
